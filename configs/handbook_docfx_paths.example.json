@@ -1,0 +1,13 @@
+{
+  "_comment": "Future BlackBox mapping: github_repo -> DocFX path under de-de/docs/",
+  "al-arbeitsvorstahl": {
+    "product_line": "mmplus",
+    "module_slug": "arbeitsvorstahl",
+    "title": "FA-Arbeitsvorrat Stahlhandel mit Zusatzleistungen"
+  },
+  "al-bezahlmodul": {
+    "product_line": "mmcore",
+    "module_slug": "bezahlmodul",
+    "title": "Cloud Base"
+  }
+}

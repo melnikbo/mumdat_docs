@@ -1,0 +1,12 @@
+/* Optional branding overrides (mumdat uses link color #008489). */
+:root {
+  --link-color: #008489;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: #006b6f;
+}
