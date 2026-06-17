@@ -5,12 +5,15 @@
         "files": [
           "**/*.md",
           "**/toc.yml"
-        ]
+        ],
+        "src": "de-de",
+        "dest": "de-de"
       }
     ],
     "resource": [
       {
         "files": [
+          "index.html",
           "images/**",
           "**/images/**",
           "public/**"
@@ -20,6 +23,7 @@
     "output": "_site",
     "globalMetadata": {
       "_appTitle": "BlackBox Docs (test)",
+      "_appBasePath": "/mumdat_docs/",
       "_enableSearch": true,
       "_disableContribution": true
     },

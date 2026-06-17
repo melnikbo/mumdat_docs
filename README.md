@@ -20,7 +20,12 @@ handbook-docfx-starter/
 
 Published URL pattern (project site):
 
-`https://<user>.github.io/<repo>/de-DE/docs/mmplus/arbeitsvorstahl/arbeitsvorstahl.html`
+- Home: `https://<user>.github.io/<repo>/` (redirects to `de-de/index.html`)
+- Module: `https://<user>.github.io/<repo>/de-de/docs/mmplus/arbeitsvorstahl/arbeitsvorstahl.html`
+
+For this test repo: https://melnikbo.github.io/mumdat_docs/
+
+If the root URL shows raw JSON, redeploy after `index.html` + `_appBasePath` fix (see `docfx.json`).
 
 ## GitHub Pages setup (required before first deploy)
 
@@ -76,13 +81,9 @@ docfx serve _site
 
 ## Project site base path
 
-If links/CSS break on GitHub Pages (repo is not `username.github.io` root), set in `docfx.json` under `globalMetadata`:
+`docfx.json` sets `"_appBasePath": "/mumdat_docs/"` so CSS, search, and nav work on a GitHub **project** site (`user.github.io/repo/`).
 
-```json
-"_appBasePath": "/YOUR_DOCS_REPO/"
-```
-
-Replace `YOUR_DOCS_REPO` with the GitHub repository name.
+If you fork this starter to another repo, change `_appBasePath` to `"/YOUR_DOCS_REPO/"`.
 
 ## Adding modules
 
