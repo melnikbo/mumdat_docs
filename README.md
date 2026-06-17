@@ -22,6 +22,30 @@ Published URL pattern (project site):
 
 `https://<user>.github.io/<repo>/de-DE/docs/mmplus/arbeitsvorstahl/arbeitsvorstahl.html`
 
+## GitHub Pages setup (required before first deploy)
+
+The **deploy** job returns **404** until Pages is enabled for **GitHub Actions** (not "Deploy from a branch").
+
+1. Open **Settings -> Pages** for your repo, e.g.  
+   https://github.com/melnikbo/mumdat_docs/settings/pages
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not a branch).
+3. Save. You do **not** need to pick `main` / `/ (root)` when using Actions.
+4. Re-run the workflow: **Actions -> Build and deploy DocFX -> Re-run all jobs**.
+
+After the first successful deploy, the site URL is shown on the **deploy** job and on the **Pages** settings page, typically:
+
+`https://melnikbo.github.io/mumdat_docs/`
+
+### If deploy still fails with 404
+
+- Confirm the repo is **public**, or that your plan allows Pages on private repos.
+- Confirm **Settings -> Actions -> General -> Workflow permissions** allows **Read and write** (needed for `GITHUB_TOKEN` and Pages).
+- Wait 1-2 minutes after enabling Pages, then re-run (first-time provisioning can lag).
+
+### Node.js 20 warnings
+
+Warnings about Node.js 20 vs 24 on `actions/checkout` / `deploy-pages` are **not** the cause of the 404. They can be ignored for now.
+
 ## Initial push
 
 ```bash
@@ -37,11 +61,7 @@ git branch -M main
 git push -u origin main
 ```
 
-## GitHub Pages setup
-
-1. Repo **Settings** -> **Pages** -> **Build and deployment** -> Source: **GitHub Actions**
-2. After the first push, open **Actions** -> workflow **Build and deploy DocFX**
-3. When green, open the Pages URL from the deploy job
+Then complete **GitHub Pages setup** above before expecting a green deploy.
 
 ## Local preview (optional)
 
