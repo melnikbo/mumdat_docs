@@ -4,3 +4,6 @@
   items:
   - name: FA-Arbeitsvorrat Stahlhandel mit Zusatzleistungen
     href: docs/mmplus/arbeitsvorstahl/arbeitsvorstahl.md
+
+  - name: Anwenderhandbuch m+m 8D-Reporting
+    href: docs/mmplus/8d/8d.md
