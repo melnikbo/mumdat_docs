@@ -4,12 +4,38 @@ title: FA-Arbeitsvorrat Stahlhandel mit Zusatzleistungen
 
 # FA-Arbeitsvorrat Stahlhandel mit Zusatzleistungen
 
-## Einleitung
+Die App m+m „FA-Arbeitsvorrat Stahlhandel mit Zusatzleistungen“
+erweitert „Microsoft Dynamics 365 Business Central“ um die Möglichkeit,
+in der App m+m FA-Arbeitsvorrat zusätzliche Informationen der „Erw.
+Fertigungseigenschaften“ in einer Factbox anzuzeigen. Die Factbox ist
+über die Funktion „Erw. Rückmeldung“ erreichbar.
 
-Platzhalter-Seite fuer das Modul **m+m Production Order Job Overview Steel** (`al-arbeitsvorstahl`).
+Diese „Erw. Fertigungseigenschaften“ basieren auf Informationen, die der
+User zuvor in den Arbeitsplatzgruppen bzw. in Arbeitsplänen hinterlegt
+hat.
 
-Diese Datei wird spaeter durch BlackBox/Kilo ersetzt (`handbook_source=generated` -> Push in dieses docs-Repo).
+Das nachfolgend beschriebene Anwendungsbeispiel erfolgt in „Microsoft
+Dynamics 365 Business Central“.
 
-## Anwendung
+Die App „FA-Arbeitsvorrat“ findet der User über die Suche in „Microsoft
+Dynamics 365 Business Central“
 
-Beispielabschnitt. Ersetzen Sie diesen Text nach der ersten Handbook-Generierung.
+Die App m+m „FA-Arbeitsvorrat“ muss dazu installiert sein.
+
+Im FA-Arbeitsvorrat kann sich der User eine Übersicht über eine
+ausgewählte Arbeitsplatzgruppe anzeigen lassen.
+
+Mit der App „FA-Arbeitsvorrat Stahlhandel mit Zusatzleistungen“ hat der
+User die Möglichkeit, die Funktion „Erw. Rückmeldung“ zu nutzen.
+
+Nutzt der User diese, gelangt er in die Ansicht „Erw.
+Fertigungseigenschaften“ und kann die dort im Vorfeld hinterlegten
+Informationen abrufen, ohne die Ansicht wechseln zu müssen.
+
+[image]
+
+[image]
+
+[image]
+
+[image]
